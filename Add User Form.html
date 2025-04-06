@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add User Form</title>
+    <link rel="stylesheet" href="./css/Add User Form.css">
+    <link rel="stylesheet" href="./css/me Page.css">
+    <link rel="stylesheet" href="./css/ Decoration.css">
+    <script src="Form Code.js"></script>
+</head>
+
+<body>
+    <div class="background-shape circle"></div>
+    <div class="background-shape circle-small"></div>
+    <div class="background-shape circle-large"></div>
+    <div class="background-shape circle-mini"></div>
+    <div class="container">
+        <h2>Add User Form</h2>
+        <form method="post">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="license">Driver's License Number</label>
+            <input type="text" id="license" name="license" required>
+
+            <label for="car">Preferred Car Type</label>
+            <select id="car" name="car">
+                <option value="sedan">Sedan</option>
+                <option value="4x4">4x4</option>
+                <option value="sports">Sports Car</option>
+            </select>
+            <br><br>
+
+            <a href="./Admin Dashboard.html" class="button">Add User</a>
+        </form>
+    </div>
+</body>
+
+</html>

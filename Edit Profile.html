@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental - Edit Profile</title>
+
+    <link rel="stylesheet" href="./css/Sign up Form Styling.css">
+    <link rel="stylesheet" href="./css/Welcome Page.css">
+    <script src="./js/profile.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Editing Profile</h2>
+        <form method="post" id="editForm">
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" name="firstname">
+            <small class="error" id="firstname-error"></small>
+
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" name="lastname">
+            <small class="error" id="lastname-error"></small>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+            <small class="error" id="email-error"></small>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone">
+            <small class="error" id="phone-error"></small>
+
+            <label for="license">Driver's License Number</label>
+            <input type="text" id="license" name="license">
+            <small class="error" id="license-error"></small>
+
+            <label for="car">Preferred Car Type</label>
+            <select id="car" name="car">
+                <option value="sedan">Sedan</option>
+                <option value="4x4">4x4</option>
+                <option value="sports">Sports Car</option>
+            </select>
+
+            <br><br>
+            <button type="submit" class="button">Update</button>
+        </form>
+    </div>
+</body>
+
+</html>
