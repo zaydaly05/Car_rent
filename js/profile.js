@@ -18,6 +18,11 @@ document.addEventListener("DOMContentLoaded", function () {
             message: "Invalid email address"
         },
         {
+            id: "password",
+            validate: value => /^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{6,}$/.test(value),
+            message: "Password must be at least 6 characters long, contain at least 1 uppercase letter, and 1 number"
+        },
+        {
             id: "phone",
             validate: value => /^\+?\d{10,15}$/.test(value),
             message: "Invalid phone number"

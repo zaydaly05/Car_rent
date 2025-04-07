@@ -21,8 +21,9 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         // Validate password
-        if (passwordInput.value.trim().length < 6) {
-            passwordError.textContent = "Password must be at least 6 characters.";
+        const passwordPattern = /^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{6,}$/;
+        if (!passwordPattern.test(passwordInput.value.trim())) {
+            passwordError.textContent = "Password must be at least 6 characters, include at least 1 uppercase letter, and 1 number.";
             isValid = false;
         } else {
             passwordError.textContent = "";
